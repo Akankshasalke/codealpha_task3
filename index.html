@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/20f88748fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Mylogo.jpg" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Engineer</p>
+                <h1>Hi, I'm <span>Akanksha</span><br> Salke </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dummy.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a third-year Computer Engineering student with a passion for technology and software development. With hands-on experience in HTML, CSS, JavaScript , Excel , SQL , Power-BI and  knowledge of C++ ,basic Python , basic Java , I am continuously exploring new technologies and methodologies. I'm an eager learner, always excited to tackle new challenges and innovate in the tech world. I am enthusiastic about applying my knowledge to real-world scenarios.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Foundation for web development; skilled in creating structured and well-organized web pages.</li>
+                            <li><span>CSS</span><br>Learner in styling and designing web page layouts.</li>
+                            <li><span>JavaScript</span><br>Theoretical understanding of JavaScript concepts and scripting.</li>
+                            <li><span>Excel</span><br>Proficient in using Excel for data analysis and reporting</li>
+                            <li><span>SQL</span><br>Knowledgeable in database querying and management to retrieve and manipulate data.</li>
+                            <li><span>Power-BI</span><br>Experience with creating data visualizations and dashboards.</li>
+                            <li><span>C++</span><br>Understanding of object-oriented programming and algorithm design</li>
+                            <li><span>Python</span><br>Familiar with basic Python syntax and programming concepts.</li>
+                            <li><span>Java</span><br>Introductory knowledge of Java programming and object-oriented principles.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br> Eager to apply my skills in dynamic projects and contribute to team success, I am committed to continuous learning and staying ahead in the ever-evolving tech landscape. </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>BE in Computer Engineering from Dr DY Patil Institute Of Technology ,Pimpri.</li>
+                            <li><span>2022</span><br>HSC-77%</li>
+                            <li><span>2020</span><br>SSC-97.40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Technical Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> I have hands-on experience in web design, including the creation of a Netflix clone project and a personal portfolio website using HTML and CSS. These projects helped me develop a keen eye for design and functionality, allowing me to create visually appealing and user-friendly web interfaces.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-excel"></i>
+                    <h2>Excel & Power-BI</h2>
+                    <p>I have utilized Excel extensively for data analysis, including generating detailed reports on store sales and road accident statistics. Additionally, I have worked with Power BI to create interactive dashboards and visualizations that provide actionable insights from complex data sets.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>I have a solid understanding of SQL, particularly with MySQL, which I have used to manage and query databases effectively. My skills include writing and optimizing queries, managing database structures, and ensuring data integrity.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>Developed a responsive Netflix clone using HTML and CSS</p>
+                        <a href="images/netflix.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="" class="work2">
+                    <div class="layer">
+                        <h3>Excel Projects</h3>
+                        <p>Created detailed reports and visualizations for store performance and road accident analysis using Excel.</p>
+                        <a href="Excel projects/Vrinda Store Data Analysis.xlsx"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="Excel projects/Road Accident Data.xlsx"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>SQL project</h3>
+                        <p>Developed and optimized SQL queries for data management and analysis in a comprehensive database project.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+           <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>akankshasalke@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7249818724</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/Akankshasalke/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akanksha-salke-6b8660252"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download  Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Akanksha <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+<script src="index.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJenTYQj1zHrRsDvey57bFK6byzSxmFfvDGI6FR5Umui6ENGebl9k16zN2RA77voxy/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
